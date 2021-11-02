@@ -3,7 +3,7 @@ Repository for data manipulation examples.
 
 # Installation
 In order to use this repository you need to do two things.
-- install (docker)[https://www.docker.com/get-started]
+- install [docker](https://www.docker.com/get-started)
 - open a terminal and `cd` into this GitHub directory
 ## Docker
 ```console
