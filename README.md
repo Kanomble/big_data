@@ -3,10 +3,8 @@ Repository for data manipulation examples.
 
 # Installation
 In order to use this repository you need to do two things.
-## install [docker](https://www.docker.com/get-started) 
-### Windows
-
-- open a terminal and `cd` into this GitHub directory
+ - install [docker](https://www.docker.com/get-started)
+ - open a terminal, navigate into the corresponding directory and follow the next instructions
 ## Docker
 ```console
 docker build -t bigdata:1.0 .
