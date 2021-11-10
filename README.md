@@ -22,8 +22,8 @@ docker exec -it bigdata /bin/bash
 ```
 OR you can simply `docker pull` the image from my [DockerHub](https://hub.docker.com/r/kanomble/bio_big_data_tools) public available builds 
 ```console
-docker pull kanomble/bio_big_data_tools:1.2
-docker run -dt --name bigdata -v ${PWD}:/BigData/applications -p 127.0.0.1:8888:8888/tcp kanomble/bio_big_data_tools:1.2
+docker pull kanomble/bio_big_data_tools:1.4
+docker run -dt --name bigdata -v ${PWD}:/BigData/applications -p 127.0.0.1:8888:8888/tcp kanomble/bio_big_data_tools:1.4
 docker exec -it bigdata /bin/bash
 ```
 # Repository Structure
