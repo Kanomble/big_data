@@ -1,0 +1,7 @@
+pandas
+wget
+biopython
+altair
+matplotlib
+openpyxl
+seaborn
