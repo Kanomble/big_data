@@ -30,7 +30,7 @@ docker exec -it bigdata /bin/bash
 ```
 
 ## Jupyter Notebook
-Type ``http://127.0.0.1:8888/` into your browser, in order to access Jupyter Notebook. If you need to type in a token or a password open a terminal or a PowerShell and submit the command `docker exec -it bigdata /bin/bash`. If your prompt changed to something like this: `root@xyz1234xyz:/BigData/applications`, you have access to the container. Now you can view your running jupyter notebook kernels by submitting the command: `jupyter notebook list`. Copy the link and paste it into your browser search bar. Now you have access to your container's jupyter notebook installation.
+Type `http://127.0.0.1:8888/` into your browser, in order to access Jupyter Notebook. If you need to type in a token or a password open a terminal or a PowerShell and submit the command `docker exec -it bigdata /bin/bash`. If your prompt changed to something like this: `root@xyz1234xyz:/BigData/applications`, you have access to the container. Now you can view your running jupyter notebook kernels by submitting the command: `jupyter notebook list`. Copy the link and paste it into your browser search bar. Now you have access to your container's jupyter notebook installation.
 
 # Repository Structure
 In the `scripts` directory you can find jupyter notebooks with examples regarding dataframe processing, as well as examples how to interact with NCBIs EDirect software suite and BLAST commandline tool. The `data` directory can be used to store data and script results.
