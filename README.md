@@ -35,3 +35,5 @@ Type `http://127.0.0.1:8888/` into your browser, in order to access Jupyter Note
 # Repository Structure
 In the `scripts` directory you can find jupyter notebooks with examples regarding dataframe processing, as well as examples how to interact with NCBIs EDirect software suite and BLAST commandline tool. The `data` directory can be used to store data and script results.
 
+# USeful Links
+- search fields descriptions and tags for [E-utilities](https://pubmed.ncbi.nlm.nih.gov/help/#search-tags)
