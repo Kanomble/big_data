@@ -48,4 +48,5 @@ In the `scripts` directory you can find jupyter notebooks with examples regardin
 
 # Useful Links
 - python [tutrial](https://www.w3schools.com/python/default.asp)
+- markdown [cheat sheet](https://www.markdownguide.org/basic-syntax/)
 - search fields descriptions and tags for [E-utilities](https://pubmed.ncbi.nlm.nih.gov/help/#search-tags)
