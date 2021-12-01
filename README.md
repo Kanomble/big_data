@@ -19,8 +19,10 @@ In order to use the applications used in the examples of this course you can do 
 
 If you just want to view the examples and execute python code you can simply open the Jupyter Notebook files with your Jupyter Notebook application.
 ## BigData Image and Container Setup
+<span style="color:red"> Execute the following code within an terminal/PowerShell pointing at a local copy of this GitHub repository! </span>
 You can build the docker image from scratch with the provided `Dockerfile`:
 ```console
+#this will take some time (depending on your internet connection)
 docker build -t bigdata:1.0 .
 docker run -dt --name bigdata -v ${PWD}:/BigData/applications -p 127.0.0.1:8888:8888/tcp bigdata:1.0 
 docker exec -it bigdata /bin/bash
