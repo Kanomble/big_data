@@ -5,7 +5,7 @@ Python offers several packages for data manipulation such as [pandas](https://pa
 
 However, you do not need to have an active installation of Docker on your system to view and use the Jupyter Notebook files. Simply open those files with your own Jupyter Notebook installation, just make sure to have the modules listed with the `import` statements installed. Some scripts and code with the `!` sign at the beginning wont work, because you need to have the right software installed and reachable through your operating systems default command line.
 # Installation
-In order to use this repository you need to do two things.
+In order to use the applications used in the examples of this course you can do the follwing things.
  - install [docker](https://www.docker.com/get-started)
  - download this GitHub repository, either as a ZIP compressed archive or via the `git` command line tool
    -  on this website click on the upper right `code` button and on `Download ZIP` extract the repository into a directory of your choice
@@ -17,6 +17,7 @@ In order to use this repository you need to do two things.
  - now you are ready to download the docker image with `docker pull` or build it from scratch (`docker build`) with the provided Dockerfile
  - in a last step you can start a docker container with the `docker run` command
 
+If you just want to view the examples and execute python code you can simply open the Jupyter Notebook files with your Jupyter Notebook application.
 ## BigData Image and Container Setup
 You can build the docker image from scratch with the provided `Dockerfile`:
 ```console
