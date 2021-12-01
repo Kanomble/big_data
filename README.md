@@ -12,7 +12,7 @@ In order to use the applications used in the examples of this course you can do 
    -  if you are experienced with `git`, clone this repository into a directory of your choice
  - open/start a terminal - for windows users: start the `powershell`
    - press `windows + x` and click on `windows PowerShell`
- - navigate into the corresponding directory with the `cd` argument e.g. `cd ~/Documents/` and follow the next instructions
+ - navigate into the corresponding directory with the `cd` argument e.g. `cd ~/Documents/` or `cd "C:\Users\XYZ\Documents\GitHub_Directory\big_data"` - you need to put the " signs between your filepath if there are spaces in the directory names - and follow the next instructions
    - alternatively open your filemanager and navigate into this GitHub folder
  - now you are ready to download the docker image with `docker pull` or build it from scratch (`docker build`) with the provided Dockerfile
  - in a last step you can start a docker container with the `docker run` command
