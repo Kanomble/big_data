@@ -3,7 +3,7 @@ Repository for (biological) data manipulation examples with [miniconda](https://
 
 Python offers several packages for data manipulation such as [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/) and for biological data [biopython](https://biopython.org/), as well as data visualization software such as [Matplotlib](https://matplotlib.org/) and [Altair](https://altair-viz.github.io/). Together with the provided bioinformatic tools, the Docker image can be used as a hub for bioinformatic data manipulation.
 
-However, you do not need to have an active installation of Docker on your system to view and use the Jupyter Notebook files. Simply open those files with your own Jupyter Notebook installation, just make sure to have the modules listed with the `import` statements installed. Some scripts and code with the `!` sign at the beginning wont work, because you need to have the right software installed and reachable through your operating systems default command line.
+However, you do not need to have an active installation of Docker on your system to view and use the Jupyter Notebook files. Simply open those files with your own Jupyter Notebook installation, just make sure to have the modules installed, which are listed by the `import` statements in the header section of the relevant scripts. Some scripts and code begin with the `!` sign. Execution of those code cells may not work for local Anaconda Installations, because you need to have the right software installed on your operating system.
 # Installation
 In order to use the applications used in the examples of this course you can do the follwing things.
  - install [docker](https://www.docker.com/get-started)
