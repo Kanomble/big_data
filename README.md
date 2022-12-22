@@ -33,7 +33,23 @@ docker pull kanomble/bio_big_data_tools:1.4
 docker run -dt --name bigdata -v ${PWD}:/BigData/applications -p 127.0.0.1:8888:8888/tcp kanomble/bio_big_data_tools:1.4
 docker exec -it bigdata /bin/bash
 ```
-The variable `${PWD}` defines your current filepath. For my personal `document` folder on my windows machine this is: `C:\Users\Lukas Becker\Documents`. `${PWD}` can get replaced with the full length filepath that points to the (downloaded) content of this GitHub repository, e.g. `C:\Users\XYZ\Documents\GitHub_Directory\big_data`.
+The variable `${PWD}` defines your current filepath. For my personal `document` folder on my windows machine this is: `C:\Users\Lukas Becker\Documents`. `${PWD}` can get replaced with the full length filepath that points to the (downloaded) content of this GitHub repository, e.g. `C:\Users\XYZ\Documents\GitHub_Directory\big_data`. 
+
+## Docker and additional modules
+
+If you are working with the docker image of this repository, you can add python modules with pip.
+First you need to connect to a running container instance, you can either use the docker-desktop application or you can execute the following command within an windows powershell or mac terminal window to access the container terminal: `docker exec -it bigdata /bin/bash`. After submitting this command your prompt should have changed to something like this: `root@d9580d0ac37b:/BigData/applications#`. Now you can download and install packages, for example with `pip install ...`.
+The packages are now available in the active container instance but are not transferred to the image. 
+To transfer the new packages to the image you have to use the `docker commit` command e.g.: `docker commit bigdata kanomble/bio_big_data_tools:1.5`. After this you can delete the old container and start a new container with: `docker run -dt --name bigdata -v ${PWD}:/BigData/applications -p 127.0.0.1:8888:8888/tcp kanomble/bio_big_data_tools:1.5`.
+
+Summary:
+- start the container
+- open a container terminal: `docker exec -it bigdata /bin/bash`
+- download and install packages/software: `pip install plotly`
+- exit the container terminal: `exit`
+- commit the updated container to an image by updating the tag (here from 1.4 to 1.5): `docker commit bigdata kanomble/bio_big_data_tools:1.5`
+- delete the old container
+- start a new container with the updated image: `docker run -dt --name bigdata -v ${PWD}:/BigData/applications -p 127.0.0.1:8888:8888/tcp kanomble/bio_big_data_tools:1.5`
 
 ## Jupyter Notebook
 
